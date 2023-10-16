@@ -1,0 +1,40 @@
+{% extends 'dental/base.html' %}
+
+{% block content %}
+<style>
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .gallery-item {
+        width: 400px;
+        margin: 10px;
+    }
+    .gallery-item img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+<h1>{{title}}</h1>
+
+<h2>Фотогалерея</h2>
+
+    <!-- <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload</button>
+    </form> -->
+
+    <h3>Фотографии в галереи:</h3>
+    <div class="gallery">
+        {% for image in gallery %}
+            <div class="gallery-item">
+                <img src="{{ image.image.url }}" alt="Gallery Image">
+            </div>
+        {% empty %}
+            <p>No images in the gallery yet.</p>
+        {% endfor %}
+    </div>
+{% endblock %}

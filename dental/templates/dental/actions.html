@@ -1,0 +1,114 @@
+{% extends 'dental/base.html' %}
+{% load static %}
+{% block content %}
+
+<figure><img src="{% static "dental/images/akcii.jpg" %}" alt="My image"/></figure>
+<p>Акции</p>
+<div class="stocks">
+    <div class="stocks__item">
+                    
+                <div class="stocks__wrap">
+<h3 class="stocks__title">
+    Подарите близким улыбку!                        </h3>
+    <figure class="sert_01"><img src="{% static "dental/images/sert.png" %}" alt="My image"/></figure>
+<div class="stocks__desc">
+    В клинике Практик есть подарочные сертификаты разных номиналов. Дарите родным и близким красоту и здоровье. Поверьте, они будут счастливы и станут чаще улыбаться и радоваться жизни.                        </div>
+                        <button onclick="ym(56135011,'reachGoal','popup_open_lead'); return true;" class="btn first__btn openPopup">
+    Записаться по акции
+</button>
+</div>
+</div>
+    <div class="stocks__item">
+                    
+                <div class="stocks__wrap">
+<h3 class="stocks__title">
+    Такси после седации - за счет клиники                        </h3>
+    <figure class="sert_01"><img src="{% static "dental/images/taxi.jpg" %}" alt="My image"/></figure>
+<div class="stocks__desc">
+    Такси после лечения, удаления или имплантации зубов под седацией - за счет клиники!                         </div>
+                        <button onclick="ym(56135011,'reachGoal','popup_open_lead'); return true;" class="btn first__btn openPopup">
+    Записаться по акции
+</button>
+</div>
+</div>
+    <div class="stocks__item">
+                    
+                <div class="stocks__wrap">
+<h3 class="stocks__title">
+    Дарим 1000 рублей на любую услугу в День рождения!                        </h3>
+    <figure class="sert_01"><img src="{% static "dental/images/1000rub.jpeg" %}" alt="My image"/></figure>
+<div class="stocks__desc">
+    Дарим 1000 рублей на любую услугу в День рождения! Предложение действует в течение 30 дней после дня рождения.                        </div>
+                        <button onclick="ym(56135011,'reachGoal','popup_open_lead'); return true;" class="btn first__btn openPopup">
+    Записаться по акции
+</button>
+</div>
+</div>
+    <div class="stocks__item">
+                    
+                <div class="stocks__wrap">
+<h3 class="stocks__title">
+    -40% на премиум-импланты                        </h3>
+    <figure class="sert_01"><img src="{% static "dental/images/Anthogyr.jpeg" %}" alt="My image"/></figure>
+<div class="stocks__desc">
+    -40% на импланты Anthogyr (Франция) - дочерняя фирма мирового лидера дентальной имплантации. Премиальное качество по доступной цене - от 30 000 р. вместо 50 000 р.!                        </div>
+                        <button onclick="ym(56135011,'reachGoal','popup_open_lead'); return true;" class="btn first__btn openPopup">
+    Записаться по акции
+</button>
+</div>
+</div>
+    <div class="stocks__item">
+                    
+                <div class="stocks__wrap">
+<h3 class="stocks__title">
+    Импланты Dentium - 19 900 руб.. вместо 22 000 руб.                        </h3>
+    <figure class="sert_01"><img src="{% static "dental/images/Dentium.png" %}" alt="My image"/></figure>
+<div class="stocks__desc">
+    Импланты от передового мирового производителя Dentium (Южная Корея) всего 19 900 руб. вместо 22 000 руб. В услугу входит имплант + установка.
+
+
+*скидка предоставляется при оплате всей имплантации в течение 3х дней после консультации
+</div>
+                        <button onclick="ym(56135011,'reachGoal','popup_open_lead'); return true;" class="btn first__btn openPopup">
+    Записаться по акции
+</button>
+</div>
+</div>
+    <div class="stocks__item">
+                    
+                <div class="stocks__wrap">
+<h3 class="stocks__title">
+    -10% на лечение зубов в "Счастливые часы"!                        </h3>
+    <figure class="sert_01"><img src="{% static "dental/images/10-percent.jpg" %}" alt="My image"/></figure>
+<div class="stocks__desc">
+    Каждый день в определенное время действует скидка 10% на лечение зубов под микроскопом. Актуальное время уточняйте у администратора!<br>                        </div>
+                            <div class="stocks__postscriptum">
+        *Актуальную информацию уточняйте у администратора                            </div>
+                        <button onclick="ym(56135011,'reachGoal','popup_open_lead'); return true;" class="btn first__btn openPopup">
+    Записаться по акции
+</button>
+</div>
+</div>
+</div>
+<style>
+.sert_01{
+width: 30%; /* Ширина области */
+min-height: 150px; /* Высота области */
+margin: 0;
+padding: 10px;
+overflow: hidden; /* Прячем всё за пределами */
+min-width: 200px; /* Минимальная ширина */
+}
+figure {
+width: 60%; /* Ширина области */
+min-height: 150px; /* Высота области */
+margin: 0 auto; /* Обнуляем отступы */
+overflow: hidden; /* Прячем всё за пределами */
+min-width: 200px; /* Минимальная ширина */
+}
+figure img { 
+width: 100%; /* Ширина изображений */
+margin: -1% 0 0 0; /* Сдвигаем вверх */
+}
+</style>
+{% endblock %}

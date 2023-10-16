@@ -1,0 +1,33 @@
+{% extends 'dental/base.html' %}
+{% load static %}
+{% block content %}
+<figure><img src="{% static "dental/images/5.png" %}" alt="My image"/></figure>
+<p>Контакты</p>
+<div class="row align-items-center"><div class="col-xl-1 col-12"></div> <div class="col-xl-6 col-lg-8 col-md-12 col-sm-12 col-12"><div class="h1 mb60"><h2 style="all: unset;">Как добраться до нас</h2></div> <p class="mb40">
+    Клиника располагается в деловом центре города, по адресу: Проезд Борцов Октября, 2а ст1. Вход в клинику расположен со стороны ул. Советская. Для владельцев авто, рядом с нашей клиникой, всегда есть свободные парковочные места и автостоянка. Ориентирами являются: Отель "DoubleTree by Hilton Hotel Tyumen», центральная площадь г. Тюмень, здание Тюменского областного суда, Департамент недропользования и экологии Тюменской обл, а также Музейный комплекс им И.Я. Словцова.
+</p> <p>
+    Если вы живете на улице Советской, Орджоникидзе, Володарского и Даудельная, то вам будет удобно дойти пешком. Автобус из любой части города, №: 25, 39, 73, 30, 65, 62; остановка: пл. Центральная, сквер им. Немцова, Советская и Володарского.
+</p></div> 
+
+
+<div id="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9f0707d96ad5119278ab53276e15782b198b95fd21e8f1293d8be0e6e4fd5d83&amp;width=1280&amp;height=703&amp;lang=ru_RU&amp;scroll=true"></script></div>
+
+<div class="row align-items-center"><div class="col-xl-1 col-12"></div> <div class="col-xl-6 col-lg-8 col-md-12 col-sm-12 col-12"><div class="h1 mb60"><h2 style="all: unset;">Реквизиты компании</h2></div> <p><span itemprop="name">ООО «Шикарная улыбка»</span> <br></p><meta itemprop="telephone" content="+73452699992"> <span itemprop="address" itemscope="itemscope" itemtype="https://schema.org/PostalAddress">
+    Юридический адрес: <span itemprop="postalCode">625000</span>, <span itemprop="addressLocality">Тюменская область, <br>
+    город Тюмень</span>, <span itemprop="streetAddress">Проезд Борцов Октября, 2а ст1, <br>
+    дом 1 этаж цокольный, офис 1;</span> <br></span>
+ИНН/КПП 7203463920/720000000; <br> р/с 407028102012400000; <br> ФИЛИАЛ ЗАПАДНО-СИБИРСКИЙ ПАО БАНКА <br> "ФК ОТКРЫТИЕ" г Ханты-Мансийск <br> к/с 30101810465777100812; <br> БИК 046577964; <br> ОКПО 34791555 <br> Email: <span itemprop="email">info@72.ru</span> <br> <p></p></div></div>
+<style>
+    figure {
+     width: 80%; /* Ширина области */
+     min-height: 200px; /* Высота области */
+     margin: 0 auto; /* Обнуляем отступы */
+     overflow: hidden; /* Прячем всё за пределами */
+     min-width: 300px; /* Минимальная ширина */
+    }
+    figure img { 
+     width: 100%; /* Ширина изображений */
+     margin: -10% 0 0 0; /* Сдвигаем вверх */
+    }
+</style>
+{% endblock %}
